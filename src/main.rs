@@ -2,7 +2,6 @@ use actix_web::{middleware::Logger, web, App, HttpServer};
 
 mod actors;
 mod database;
-mod routes;
 mod services;
 
 use dotenv::dotenv;
