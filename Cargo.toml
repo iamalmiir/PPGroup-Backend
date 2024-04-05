@@ -1,0 +1,26 @@
+[package]
+name = "backend-service"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "backend_service"
+path = "src/lib.rs"
+
+
+[dependencies]
+actix-multipart = "0.6.1"
+actix-web = "4.5.1"
+aws-config = "1.1.7"
+aws-sdk-s3 = "1.17.0"
+dotenv = "0.15.0"
+env_logger = "0.11.3"
+futures-util = "0.3.30"
+log = "0.4.20"
+nanoid = "0.4.0"
+sea-orm = { version = "0.12.14", features = ["sqlx-postgres", "runtime-tokio-rustls", "macros"] }
+serde = "1.0.196"
+serde_derive = "1.0.196"
+serde_json = "1.0.113"
+thiserror = "1.0.58"
+tokio = "1.36.0"
