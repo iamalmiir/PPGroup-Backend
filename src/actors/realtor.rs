@@ -27,7 +27,6 @@ impl Realtor {
             photo: Set(realtor.photo),
             phone: Set(realtor.phone),
             is_mvp: Set(realtor.is_mvp),
-            description: Set(realtor.description),
             ..Default::default()
         };
 

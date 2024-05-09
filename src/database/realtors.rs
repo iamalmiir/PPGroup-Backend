@@ -8,11 +8,13 @@ use serde::Serialize;
 pub struct Model {
     #[sea_orm(primary_key, auto_increment = false)]
     pub id: String,
+    #[sea_orm(column_type = "Text")]
     pub full_name: String,
-    #[sea_orm(unique)]
+    #[sea_orm(column_type = "Text", unique)]
     pub email: String,
     #[sea_orm(column_type = "Text", nullable)]
     pub photo: Option<String>,
+    #[sea_orm(column_type = "Text")]
     pub phone: String,
     pub is_mvp: Option<bool>,
     #[sea_orm(column_type = "Text", nullable)]
